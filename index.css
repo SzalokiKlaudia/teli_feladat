@@ -7,29 +7,29 @@ body{
     background-image: url(GRID_TABLAZAT/kepek/hatter.jpg);
     background-repeat: repeat;
     background-size: 50%;
-
-    
-    
+  
 }
 
+.container{
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  background-color: yellow;
+}
+
+
 .grid-container {
-    width: 80%;
+    
     background-color: #fffffc;
-    gap: 1rem;
-    margin: auto;
     display: grid;
-    grid-template-areas:
-      'h h h h h h h h h h h h'
-      'm main main main main main main a a a a a'
-      'f f f f f f f f f f f f';
-    grid-template-rows: 7rem 51rem 4rem;
+    grid-template-columns: 20% 25% 25% 30%;
+    
   }
   
   .header { 
-    width: 100%;
     height: 7rem;
     background-image: url(GRID_TABLAZAT/kepek/fejlec.jpg);
-    grid-area: h; 
+    /* grid-area: h;  */
     position: relative;
   }
 
@@ -46,34 +46,36 @@ body{
 
 
   .menu { 
-    grid-area: m; 
+    /* grid-area: m;  */
     background-color: #fffffc;
     padding-top: 1.5rem;
     padding-left: 1rem;
   }
-  .main { 
-    grid-area: main; 
+  .main-left { 
      background-color: #fffffc;
-     padding-top: 1rem;
-     
+     padding-top: 1.5rem;
+     padding-left: 2rem;
 
   
   }
+
+  .main-right{
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+
+
+  }
+
   .aside {
-    grid-area: a; 
     background-color: #fffffc;
-    position: relative;
-    padding-right: 1rem;
-    
+    text-align: justify;
+    border: 1px solid gray;
+    padding: 1rem;
   
   }
 
-  .aside-box{
-    position: absolute;
-
-  }
   .footer { 
-    grid-area: f; 
+    /* grid-area: f;  */
      background-color: #2196f3;
   
   }
@@ -96,8 +98,7 @@ body{
 
   .main{
     box-sizing: border-box;
-    width: 100%;
-    position: relative;
+    /* position: relative; */
   }
   
 
@@ -118,68 +119,99 @@ body{
   .image1{
     background-image: url(GRID_TABLAZAT/kepek/tel1.jpg);
     background-color: yellow;
-    left: 0;
     transform: rotate(-10deg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   
   
   .image2{
     background-image: url(GRID_TABLAZAT/kepek/tel2.jpg);
-    left: 12rem;
-    transform: rotate(-10deg);
+    transform: rotate(10deg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
   }
   .image3{
-    background-image: url(GRID_TABLAZAT/kepek/tel3.jpg);
-    top: 12rem;
-    transform: rotate(10deg);
-
-    
-    
-
-
+    background-image: url(GRID_TABLAZAT/kepek/tel7.jpg);
+    transform: rotate(-10deg);
+    background-size: cover;
   }
 
   .image4{
-    background-image: url(GRID_TABLAZAT/kepek/tel4.jpg);
-    top: 12rem;
-    left: 12rem;
+    background-image: url(GRID_TABLAZAT/kepek/tel8.jpg);
     transform: rotate(10deg);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .image5{
-    background-image: url(GRID_TABLAZAT/kepek/tel5.jpg);
-    top: 28rem;
+    background-image: url(GRID_TABLAZAT/kepek/tel4.jpg);
     transform: rotate(-10deg);
-
-   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .image6{
-    background-image: url(GRID_TABLAZAT/kepek/tel6.jpg);
-    top: 28rem;
-    left: 12rem;
-    transform: rotate(-10deg);
+    background-image: url(GRID_TABLAZAT/kepek/tel5.jpg);
+    transform: rotate(10deg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
   }
 
   .image7{
-    background-image: url(GRID_TABLAZAT/kepek/tel7.jpg);
-    top: 38rem;
-    transform: rotate(10deg);
-
-    
-  
+    background-image: url(GRID_TABLAZAT/kepek/tel3.jpg);
+    transform: rotate(-10deg);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .image8{
-    background-image: url(GRID_TABLAZAT/kepek/tel8.jpg);
-    top: 38rem;
-    left: 12rem;
+    background-image: url(GRID_TABLAZAT/kepek/tel6.jpg);
     transform: rotate(10deg);
+    background-size: cover;
+  
 
   }
+
+  .box-holder1{
+    padding-bottom: 12rem;
+  }
+
+  .box-holder2{
+    padding-bottom: 20rem;
+  }
+
+  .box-holder3{
+    padding-bottom: 12rem;
+  }
+
+  .box-holder4{
+    padding-bottom: 17rem;
+  }
+
+  .box-holder5{
+    padding-bottom: 12rem;
+  }
+
+  .box-holder6{
+    padding-bottom: 20rem;
+  }
+
+  .box-holder7{
+    padding-bottom: 12rem;
+  }
+
+  .box-holder8{
+    padding-bottom: 17rem;
+  }
+ 
 
   .content{
     background-color: #fffffc;
@@ -188,9 +220,13 @@ body{
  
 
   .aside-description{
-    line-height: 1.3rem;
+    text-align: justify;
   }
 
   .footer{
+    /* height: 3rem; */
+    width: 100%;
     text-align: center;
+    display: grid;
+    vertical-align: middle;
   }
