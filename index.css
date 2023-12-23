@@ -3,7 +3,7 @@
 }
 
 body{
-   
+    margin-top: 0;
     background-image: url(GRID_TABLAZAT/kepek/hatter.jpg);
     background-repeat: repeat;
     background-size: 50%;
@@ -14,15 +14,16 @@ body{
   width: 70%;
   height: 100%;
   margin: auto;
-  background-color: yellow;
+  box-shadow: 0px 0px 20px rgb(209, 205, 205);
+  outline: none;
+  
 }
 
 
 .grid-container {
-    
     background-color: #fffffc;
     display: grid;
-    grid-template-columns: 20% 25% 25% 30%;
+    grid-template-columns: 25% 45% 30%;
     
   }
   
@@ -51,26 +52,15 @@ body{
     padding-top: 1.5rem;
     padding-left: 1rem;
   }
-  .main-left { 
-     background-color: #fffffc;
-     padding-top: 1.5rem;
-     padding-left: 2rem;
-
-  
-  }
-
-  .main-right{
-    padding-top: 1.5rem;
-    padding-left: 1.5rem;
-
-
-  }
+ 
 
   .aside {
     background-color: #fffffc;
     text-align: justify;
-    border: 1px solid gray;
-    padding: 1rem;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;;
+    padding: 2rem;
   
   }
 
@@ -96,17 +86,14 @@ body{
     
   }
 
-  .main{
-    box-sizing: border-box;
-    /* position: relative; */
+  main{
+    padding-top: 2rem;
+    padding-bottom: 5rem;
   }
-  
 
   .image-box{
     box-sizing: content-box;
-    position: absolute;
-    height: 7rem;
-    width: 10rem;
+    width: 40%;
     border-top: 20px solid #ffffff;
     border-right: 20px solid #ffffff;
     border-bottom: 40px solid #ffffff;
@@ -129,16 +116,20 @@ body{
   
   .image2{
     background-image: url(GRID_TABLAZAT/kepek/tel2.jpg);
-    transform: rotate(10deg);
+    transform: rotate(-10deg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    float: right;
+    margin-bottom: 1rem;
 
   }
   .image3{
     background-image: url(GRID_TABLAZAT/kepek/tel7.jpg);
-    transform: rotate(-10deg);
+    transform: rotate(10deg);
     background-size: cover;
+    float: left;
+    
   }
 
   .image4{
@@ -146,10 +137,11 @@ body{
     transform: rotate(10deg);
     background-size: cover;
     background-repeat: no-repeat;
+    float: right;
+    
   }
 
   .image5{
-    background-image: url(GRID_TABLAZAT/kepek/tel4.jpg);
     transform: rotate(-10deg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -158,16 +150,17 @@ body{
 
   .image6{
     background-image: url(GRID_TABLAZAT/kepek/tel5.jpg);
-    transform: rotate(10deg);
+    transform: rotate(-10deg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    float: right;
 
   }
 
   .image7{
     background-image: url(GRID_TABLAZAT/kepek/tel3.jpg);
-    transform: rotate(-10deg);
+    transform: rotate(10deg);
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -176,40 +169,32 @@ body{
     background-image: url(GRID_TABLAZAT/kepek/tel6.jpg);
     transform: rotate(10deg);
     background-size: cover;
+    float: right;
   
 
   }
 
-  .box-holder1{
-    padding-bottom: 12rem;
-  }
 
   .box-holder2{
-    padding-bottom: 20rem;
+    margin-bottom: 25rem;
+    
   }
 
-  .box-holder3{
-    padding-bottom: 12rem;
-  }
-
-  .box-holder4{
-    padding-bottom: 17rem;
-  }
-
-  .box-holder5{
-    padding-bottom: 12rem;
+  .box-holder1{
+    padding-bottom: 1rem;
+    
   }
 
   .box-holder6{
-    padding-bottom: 20rem;
+    
   }
 
   .box-holder7{
-    padding-bottom: 12rem;
+    
   }
 
   .box-holder8{
-    padding-bottom: 17rem;
+    
   }
  
 
@@ -229,4 +214,33 @@ body{
     text-align: center;
     display: grid;
     vertical-align: middle;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    
+    .grid-container{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+  
+    .menu{
+      grid-area: 1;
+    }
+
+    main{
+      grid-area: 2;
+    }
+
+    .aside{
+      grid-area: 3;
+    }
+
+    .image-box{
+     /* width: 50%; */
+    }
+
+    
+
+   
   }
