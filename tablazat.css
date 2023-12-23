@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin-top: 0;
+    background-image: url(GRID_TABLAZAT/kepek/hatter.jpg);
+    background-repeat: repeat;
+    background-size: 50%;  
+}
+
+.container{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    box-shadow: 0px 0px 20px rgb(209, 205, 205);  
+}
+
+
+.grid-container {
+    background-color: #fffffc;
+    display: grid;
+    grid-template-columns: 20% 50% 30%;    
+}
+  
+.header { 
+    height: 7rem;
+    background-image: url(GRID_TABLAZAT/kepek/fejlec.jpg);
+    position: relative;
+}
+
+.header-title{
+    color: #fffffc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+
+.menu { 
+    background-color: #fffffc;
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+}
+
+.button{
+    width: 13rem;
+    background-color: #3d8be1;
+    color: #fffffc;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 0.3rem;
+  }
+ 
+main{
+    padding-top: 1.5rem;
+}
+
+.aside {
+    background-color: #fffffc;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;;
+    padding: 1rem;  
+}
+
+
+.aside-title{
+    font-size: 1.3rem;
+    font-weight: 900;    
+}
+
+
+.footer { 
+    background-color: #2196f3;
+    width: 100%;
+    text-align: center;
+    display: grid;
+    vertical-align: middle;
+}
+
+
+  tr {
+    border-bottom: 1px solid blue;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 95%;
+    margin-left: 0.5rem;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #D6EEEE;
+  }
+
+
+  @media only screen and (max-width: 1000px) {
+    .container{
+    width: 100%;
+    }
+    
+    .grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+
+  
+    .menu{
+    grid-area: 1;
+    }
+
+    main{
+    grid-area: 2;
+    }
+
+    .aside{
+    grid-area: 3;
+    }
+
+ 
+  }
+
+  
