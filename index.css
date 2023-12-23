@@ -1,0 +1,214 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin-top: 0;
+    background-image: url(GRID_TABLAZAT/kepek/hatter.jpg);
+    background-repeat: repeat;
+    background-size: 50%; 
+}
+
+.container{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    box-shadow: 0px 0px 20px rgb(209, 205, 205);
+}
+
+
+.grid-container {
+    background-color: #fffffc;
+    display: grid;
+    grid-template-columns: 25% 45% 30%;
+  }
+  
+
+  .header { 
+    height: 7rem;
+    background-image: url(GRID_TABLAZAT/kepek/fejlec.jpg);
+    position: relative;
+  }
+
+
+  .header-title{
+    color: #fffffc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* eltolja a szöveget a fele értékével az x és y tengelyen*/
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+
+
+  .menu { 
+    background-color: #fffffc;
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+  }
+ 
+
+  .button{
+    width: 13rem;
+    background-color: #3d8be1;
+    color: #fffffc;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 0.3rem;  
+  }
+
+
+  main{
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+  }
+
+  .image-box{
+    box-sizing: content-box;
+    width: 40%;
+    border-top: 20px solid #ffffff;
+    border-right: 20px solid #ffffff;
+    border-bottom: 40px solid #ffffff;
+    border-left: 20px solid #ffffff;
+    box-shadow: 15px 15px 5px 0px rgba(184,184,184,0.6);
+    outline: 2px solid #B9B9B9;
+    }
+
+
+  .image1{
+    background-image: url(GRID_TABLAZAT/kepek/tel1.jpg);
+    background-color: yellow;
+    transform: rotate(-10deg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  
+  
+  .image2{
+    background-image: url(GRID_TABLAZAT/kepek/tel2.jpg);
+    transform: rotate(-10deg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: right;
+    margin-bottom: 1rem;
+  }
+
+  .image3{
+    background-image: url(GRID_TABLAZAT/kepek/tel7.jpg);
+    transform: rotate(10deg);
+    background-size: cover;
+    float: left; 
+  }
+
+  .image4{
+    background-image: url(GRID_TABLAZAT/kepek/tel8.jpg);
+    transform: rotate(10deg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: right;  
+  }
+
+  .image5{
+    transform: rotate(-10deg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .image6{
+    background-image: url(GRID_TABLAZAT/kepek/tel5.jpg);
+    transform: rotate(-10deg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: right;
+  }
+
+  .image7{
+    background-image: url(GRID_TABLAZAT/kepek/tel3.jpg);
+    transform: rotate(10deg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .image8{
+    background-image: url(GRID_TABLAZAT/kepek/tel6.jpg);
+    transform: rotate(10deg);
+    background-size: cover;
+    float: right;
+  }
+
+
+  .box-holder2{
+    margin-bottom: 25rem;
+  }
+
+  .box-holder1{
+    padding-bottom: 1rem;
+  }
+
+  .content{
+    background-color: #fffffc;
+    border: 5px solid gray;
+  }
+
+  .aside {
+    background-color: #fffffc;
+    text-align: justify;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;;
+    padding: 2rem;
+  }
+  
+ 
+  .aside-description{
+    text-align: justify;
+  }
+
+  .footer{
+    background-color: #2196f3;
+    width: 100%;
+    text-align: center;
+    display: grid;
+    vertical-align: middle;
+  }
+
+  @media only screen and (max-width: 1000px) {
+
+    .container{
+      width: 100%;
+    }
+    
+    .grid-container{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    .menu{
+      grid-area: 1;
+    }
+
+    main{
+      grid-area: 2;
+    }
+
+    .aside{
+      grid-area: 3;
+    }
+
+    .image-box{
+     /* width: 50%; */
+    }
+   
+  }
